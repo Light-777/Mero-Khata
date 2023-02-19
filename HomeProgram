@@ -1,0 +1,61 @@
+print("Hi Welcome to Mero Khata /n")
+print("An app for all your Personal Finance /n")
+print("Enter the Menu number to Enter the transactions /n")
+
+print("Home Menu")
+print("1:> Grocery")
+print("2:> Foods/Drinks")
+print("3:> Transportation ")
+print("4:> Medical")
+print("5:> Education")
+print("6:> Entertainment/Holiday")
+print("7:> Rent/Water/Electricity/Internet")
+print("8:> Income/Savings/Investment")
+
+user_input_homemenu = int(input("Enter Menu Number:"))
+
+if user_input_homemenu == 1:
+    print("Grocery Sub-Menus")
+    print("1:> Rice")
+    print("2:> Pulses/Dal")
+    print("3:> Cooking Oil/ Gas")
+    print("4:> Vegetables/Fruits")
+    print("5:> Meat/Eggs")
+    print("6:> Cooking Species")
+    print("7:> Miscellaneous")
+
+    user_input_grocerymenu = int (input("Enter Grocery Menu Number to add Transaction"))
+
+    if user_input_grocerymenu == 1:
+        rice = int(input("Enter Rice Bought Amount:"))
+    elif user_input_grocerymenu == 2:
+        pulses = int(input("Enter Rice Bought Amount:"))
+    elif user_input_grocerymenu == 3:
+        oil = int(input("Enter Rice Bought Amount:"))
+    elif user_input_grocerymenu == 4:
+        vegetables = int(input("Enter Rice Bought Amount:"))
+    elif user_input_grocerymenu == 5:
+        meat = int(input("Enter Rice Bought Amount:"))
+    elif user_input_grocerymenu == 6:
+        species = int(input("Enter Rice Bought Amount:"))
+    elif user_input_grocerymenu == 7:
+        grocery_misc = int(input("Enter Rice Bought Amount:"))
+    else:
+        print("Invalid Menu Selection")
+
+    grocery_total = rice + pulses + oil + vegetables + meat + species + grocery_misc
+elif user_input_homemenu == 2:
+    print("Food / Drinks Sub-menus")
+    print("1:> Restaurant/Hotels/Drinks")
+    print("2:> Alcohol / Cigrettes ")
+
+    user_input_foodmenu = int(input("Enter Foods/Drinks Menu Number to add Transactions"))
+
+    if user_input_foodmenu == 1:
+        food = int(input("Enter Restaurant Food/Drinks Paid Amount"))
+    elif user_input_foodmenu ==2:
+        alcohol = int(input("Enter Alcohol/Cigrettes Bought Amount"))
+    else:
+        print("Invalid Menu Selection")
+    
+    food_drinks_total = food + alcohol 
